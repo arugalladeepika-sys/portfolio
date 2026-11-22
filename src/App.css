@@ -250,3 +250,30 @@ padding: 60px 6%;
   margin-top: 25px !important;
   line-height: 1.8;
 }
+.profile-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #a78bfa;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.2);
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .profile-image img {
+    width: 220px;
+    height: 220px;
+  }
+}

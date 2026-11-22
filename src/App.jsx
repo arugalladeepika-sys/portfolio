@@ -1,5 +1,5 @@
 import './App.css'
-
+import profile from './assets/profile.jpeg'
 function App() {
   return (
     <div>
@@ -17,26 +17,35 @@ function App() {
       </nav>
 
       {/* Home Section */}
-      <section id="home" className="home">
-        <div className="home-content">
-          <p className="welcome">WELCOME TO MY PORTFOLIO</p>
+<section id="home" className="home">
 
-          <h1>Hi, I'm <span>Arugalla Deepika</span></h1>
+  <div className="home-content">
+    <p className="welcome">WELCOME TO MY PORTFOLIO</p>
 
-          <h2>Full Stack Developer</h2>
+    <h1>
+      Hi, I'm <span>Arugalla Deepika</span>
+    </h1>
 
-          <p className="description">
-            I am a Computer Science student passionate about
-            web development, problem solving and creating
-            innovative digital solutions.
-          </p>
+    <h2>Full Stack Developer</h2>
 
-          <div className="buttons">
-            <a href="#projects" className="btn">View My Work</a>
-            <a href="#contact" className="btn secondary">Contact Me</a>
-          </div>
-        </div>
-      </section>
+    <p className="description">
+      I am a Computer Science student passionate about
+      web development, problem solving and creating
+      innovative digital solutions.
+    </p>
+
+    <div className="buttons">
+      <a href="#projects" className="btn">View My Work</a>
+      <a href="#contact" className="btn secondary">Contact Me</a>
+    </div>
+  </div>
+
+  {/* Profile Photo */}
+  <div className="profile-image">
+    <img src={profile} alt="Arugalla Deepika" />
+  </div>
+
+</section>
 
       {/* About Section */}
 <section id="about" className="section">
